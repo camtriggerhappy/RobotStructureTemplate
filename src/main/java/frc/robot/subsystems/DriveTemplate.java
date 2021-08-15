@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-public class DriveTemplate extends SubsystemBase {
+public class driveTemplate extends SubsystemBase {
   // you should put new variables up here so they are all together
   private CANSparkMax Left1Motor;
   private CANSparkMax Left2Motor;
@@ -27,12 +27,12 @@ public class DriveTemplate extends SubsystemBase {
   private SpeedControllerGroup Left = new SpeedControllerGroup(Left1Motor, Left2Motor, Left3Motor); // """"
 
   private DifferentialDrive m_dDrive = new DifferentialDrive(Left, Right); //it is convention to name the main differential drive object this. 
-  private static DriveTemplate driveSingleton = new DriveTemplate(); // we use a singleton pattern to avoid conflicts between instances
+  private static driveTemplate driveSingleton = new driveTemplate(); // we use a singleton pattern to avoid conflicts between instances
   
   /**
-   * Creates a new DriveTemplate.
+   * Creates a new driveTemplate.
    */
-  public DriveTemplate() {
+  public driveTemplate() {
 
   }
 
@@ -40,7 +40,7 @@ public class DriveTemplate extends SubsystemBase {
   /**
    * @return the driveSingleton
    */
-  public static DriveTemplate getDrive() {
+  public static driveTemplate getDrive() {
     return driveSingleton;
   }
 
