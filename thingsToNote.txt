@@ -1,0 +1,1 @@
+In previous years you will notice classes called sensor and even a section for them. This is not reccomended anymore due to problems encountered. Sensors should now go with the subsystem they are mainly used for.
